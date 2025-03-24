@@ -1,0 +1,31 @@
+{
+    "name": "playwright-js-automation",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "test": "npx playwright test",
+      "build": "tsc",
+      "test:login": "npx playwright test login.test.ts --project=Chromium",
+      "test:Register": "npx playwright test Register.test.ts --project=Chromium",
+      "test:Register1": "npx playwright test Register1.test.ts --project=Chromium",
+      "test:dropdown": "ALLURE_RESULTS_DIR = allure-results-dropdown npx playwright test HerokuApp.test.ts --grep @dropdown",
+      "test:addRemoveElements": "npx playwright test --grep @addRemoveElements",
+      "test:UIOne": "npx playwright test --grep @UIOne",
+      "test:HerokuApp": "ALLURE_RESULTS_DIR = allure-results-HerokuApp npx playwright test HerokuApp.test.ts --project=Chromium"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+      "@playwright/test": "^1.51.0",
+      "@types/node": "^22.13.1",
+      "@types/papaparse": "^5.3.15",
+      "allure-playwright": "^3.2.0",
+      "typescript": "^5.7.3"
+    },
+    "dependencies": {
+      "papaparse": "^5.5.2"
+    }
+  }
+  
