@@ -14,4 +14,6 @@ test.skip('Add/Remove elements validation', async ({page}) => {
     const deletebtn = await page.locator(`button[onclick="deleteElement()"]`)
     await expect(deletebtn).toBeVisible();
     await deletebtn.click();
+
+    
 })
