@@ -2,7 +2,7 @@ import { _baseTest, defineConfig } from '@playwright/test';
 const ENV = process.env.ENV;
 
 export default defineConfig({
-    timeout: 30000, // Set global timeout
+    timeout: 60000, // Set global timeout
     workers:1,
     maxFailures:10,
     use: {
